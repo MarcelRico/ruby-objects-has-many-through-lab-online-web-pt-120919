@@ -22,6 +22,6 @@ class Doctor
   end
   
   def patients
-    pp appointments
+    pp appointments.collect{|app| app.patient}
   end
 end
