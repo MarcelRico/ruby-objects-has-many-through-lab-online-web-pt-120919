@@ -21,4 +21,8 @@ class Doctor
     Appointment.all.select{|app| app.doctor.name == @name}
   end
   
+  def patients
+    self.appointments.collect{|app| app.patient}
+  end
+  
 end
