@@ -13,6 +13,11 @@ class Doctor
     @@all
   end
   
+  def new_appointment(date,patient)
+    pp date
+    pp patient
+  end
+  
   def appointments
     Appointment.all.select{|app| app.doctor.name == @name}
   end
