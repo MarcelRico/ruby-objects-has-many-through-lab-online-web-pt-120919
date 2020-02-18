@@ -22,6 +22,6 @@ class Doctor
   end
   
   def patients
-    pp appointments.map{|app| app.patient}
+    pp appointments.select{|app| app.patient}
   end
 end
